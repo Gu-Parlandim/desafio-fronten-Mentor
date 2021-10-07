@@ -14,41 +14,40 @@ img {
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: #F0F0F0;
+    background-color: #F0F0F0;  
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /*Main*/
 .l_main_bg {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-image: url("/images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 900px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
 }
 
 .l_section {
-    margin: 30px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 480px;
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: white;
+    box-shadow: 2px 3px 3px hsla(0, 0%, 0%, 0.041);
 }
 .header_img {
     max-width: 350px;
 }
 .header_img > img {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 25px 25px 0px 0px;
     max-width: 100%;
     max-height: 100%;
 }
@@ -76,9 +75,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     min-width: 300px;
     background-color:hsl(225, 100%, 98%);
+    border-radius: 10px;
 }
 
 .payments_info {
@@ -104,6 +104,7 @@ body {
     text-decoration: underline;
     border: none;
     color:hsl(245, 75%, 52%);
+    padding-right: 10px;
 }
 
 .payments_button button:hover {
@@ -149,12 +150,9 @@ body {
 
 
 @media (max-width:400px) {
-    body{
-        min-height: 0;
-    }
-    .l_section {
+    /* .l_section {
         margin: 20px;
-    }
+        }*/
     
 }
 
