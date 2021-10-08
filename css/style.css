@@ -14,12 +14,6 @@ img {
 
 body {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: #F0F0F0;  
-    min-height: 100vh;
-}
-
-/*Main*/
-.l_main_bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,15 +27,11 @@ body {
 }
 
 .l_section {
+    background-color: #ffffffe7;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
-    max-width: 480px;
+    align-items: center;
     border-radius: 25px;
-    background-color: white;
-    box-shadow: 2px 3px 3px hsla(0, 0%, 0%, 0.041);
 }
 .header_img {
     max-width: 350px;
@@ -105,9 +95,11 @@ body {
     border: none;
     color:hsl(245, 75%, 52%);
     padding-right: 10px;
+    background-color: transparent;
 }
 
 .payments_button button:hover {
+    transition: all 200ms;
     cursor: pointer;
     color:hsl(245, 51%, 52%);
 }
@@ -128,6 +120,7 @@ body {
 }
 
 #confirm_payment button:hover {
+    transition: all 200ms;
     background-color:hsl(245, 75%, 65%);
     cursor: pointer;
 }
@@ -137,12 +130,15 @@ body {
 }
 
 #cancel_order button {
+    background-color: transparent;
+    transition: all 0.2s;
     border: none;
     color:hsl(224, 23%, 55%);
     font-weight: 700;
 }
 
 #cancel_order button:hover {
+    transition: all 200ms;
     cursor: pointer;
     color: hsl(223, 47%, 23%);
     font-weight: 700;
